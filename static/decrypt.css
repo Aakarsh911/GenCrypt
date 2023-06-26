@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: rgb(0,12,36);
+    background: radial-gradient(circle, rgba(0,12,36,1) 15%, rgba(63,7,92,1) 100%, rgba(19,18,19,1) 100%);
+}
+
+a {
+    border-radius: 2rem;
+}
+
+.fill {
+    background: white;
+    color: dodgerblue;
+}
+
+.logo {
+    font-family: 'Monomaniac One', sans-serif;
+    padding-top: 0;
+    color : white;
+    padding-left: 5%;
+}
+
+.navbar-brand:hover {
+    color : white;
+    border-radius: 2rem;
+}
+
+.bg-nav {
+    background: transparent;
+}
+
+.nav-ele {
+    color : white;
+}
+
+.nav-item:hover a{
+    background: white;
+    border-radius: 2rem;
+    color : dodgerblue;
+}
+
+.point {
+    cursor: pointer;
+}
+
+.pad {
+    padding-right : 10px;
+}
+
+.fade {
+    animation: fadeIn 2s;
+    animation-fill-mode: forwards;
+}
+
+ul {
+    padding-right: 5%;
+}
+
+@keyframes slideInTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.slide {
+    animation: 1s ease-out 0s 1 slideInTop;
+}
+.slideLeft {
+    animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+.slideRight {
+    animation: 1s ease-out 0s 1 slideInRight;
+}
+
+.numbers {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#particles-js {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+form {
+    height: 100%;
+    color: white;
+    animation: fadeIn 2s;
+}
+
+label {
+    display: block;
+    margin-bottom: 5%;
+    font-family: 'Monomaniac One', sans-serif;
+}
+
+h1 {
+    color : white;
+}
+
+.ok {
+    color: white;
+    background: dodgerblue;
+    border-radius: 0.5rem;
+    width : 8rem;
+    height: 3rem;
+    border: none;
+    display: block;
+    margin: 10% auto;
+}
+
+.ok:hover {
+    background: white;
+    color: dodgerblue;
+    border: 1px solid dodgerblue;
+    transition: ease-in-out 0.2s;
+}
+
+input {
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.text {
+    width : 200%;
+    text-align: left;
+    overflow: auto;
+    vertical-align: top;
+}
+
+li {
+    font-family: 'Monomaniac One', sans-serif;
+}
+

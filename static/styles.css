@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(0,12,36);
+    background: radial-gradient(circle, rgba(0,12,36,1) 15%, rgba(63,7,92,1) 100%, rgba(19,18,19,1) 100%);
+    height: 100%;
+}
+
+a {
+    border-radius: 2rem;
+}
+
+#particles-js {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.fill {
+    background: white;
+    color: dodgerblue;
+}
+
+.logo {
+    font-family: 'Monomaniac One', sans-serif;
+    padding-top: 0;
+    color : white;
+    padding-left: 5%;
+}
+
+.navbar-brand:hover {
+    color : white;
+    border-radius: 2rem;
+}
+
+.bg-nav {
+    background: transparent;
+}
+
+.nav-ele {
+    color : white;
+}
+
+.nav-item:hover a{
+    background: white;
+    border-radius: 2rem;
+    color : dodgerblue;
+}
+
+.point {
+    cursor: pointer;
+}
+
+.pad {
+    padding-right : 10px;
+}
+
+.fade {
+    animation: fadeIn 2s;
+    animation-fill-mode: forwards;
+}
+
+ul {
+    padding-right: 5%;
+}
+
+@keyframes slideInTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.slide {
+    animation: 1s ease-out 0s 1 slideInTop;
+}
+
+.main {
+    width : 100%;
+    height : 50vh;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.encrypt, .decrypt {
+    background: white;
+    color : black;
+    height: 50vh;
+    width: 40%;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideLeft {
+    animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+.slideRight {
+    animation: 1s ease-out 0s 1 slideInRight;
+}
+
+.posLeft {
+    margin-right: 2.5%;
+}
+
+.posRight {
+    margin-left: 2.5%;
+}
+
+.output {
+    width : 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+li {
+    font-family: 'Monomaniac One', sans-serif;
+}
+
